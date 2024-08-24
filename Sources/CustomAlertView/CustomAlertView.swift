@@ -63,7 +63,7 @@ public struct CustomAlertView<Content: View>: View {
                     Button("Done", action: doneAction)
                         .buttonStyle(.borderless)
                 }
-                .bold()
+                .fontWeight(.semibold)
                 .frame(maxWidth: .infinity)
             }
         }
