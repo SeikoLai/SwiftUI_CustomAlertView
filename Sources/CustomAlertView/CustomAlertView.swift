@@ -36,7 +36,7 @@ public struct CustomAlertView<Content: View>: View {
         VStack(spacing: 30) {
             if let title = title {
                 Text(title)
-                    .font(.title3)
+                    .font(.headline)
                     .bold()
                     .multilineTextAlignment(.center)
             }

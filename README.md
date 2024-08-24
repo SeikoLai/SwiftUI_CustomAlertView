@@ -26,7 +26,7 @@ CustomAlertView is a flexible and customizable alert view for SwiftUI applicatio
 You can add CustomAlertView to your project using Swift Package Manager. In Xcode:
 
 1. Go to File > Swift Packages > Add Package Dependency
-2. Enter the repository URL: `https://github.com/yourusername/CustomAlertView.git`
+2. Enter the repository URL: `https://github.com/SeikoLai/SwiftUI_CustomAlertView.git`
 3. Select the version you want to use
 
 ## Usage
