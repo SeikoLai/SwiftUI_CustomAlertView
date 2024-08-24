@@ -11,7 +11,7 @@ public struct CustomAlertView<Content: View>: View {
     let doneAction: () -> Void
     
     /// Enum to represent different types of alert content
-    enum AlertContent {
+    public enum AlertContent {
         case text(String)
         case custom(Content)
     }
