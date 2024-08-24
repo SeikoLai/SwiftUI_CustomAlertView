@@ -17,7 +17,7 @@ public struct CustomAlertModifier<AlertContent: View>: ViewModifier {
     /// Applies the custom alert modifier to the content
     /// - Parameter content: The content to which the alert is applied
     /// - Returns: A view with the custom alert overlay
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         ZStack {
             content
             
