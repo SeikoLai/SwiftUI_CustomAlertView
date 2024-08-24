@@ -56,14 +56,19 @@ public struct CustomAlertView<Content: View>: View {
             HStack(spacing: 50) {
                 Group {
                     if let cancelAction = cancelAction {
-                        Button("Cancel", action: cancelAction)
-                            .buttonStyle(.plain)
+                        Button(action: cancelAction) {
+                            Text("Cancel")
+                                .fontWeight(.semibold)
+                        }
+                        .buttonStyle(PlainButtonStyle())
                     }
                     
-                    Button("Done", action: doneAction)
-                        .buttonStyle(.borderless)
+                    Button(action: doneAction) {
+                        Text("Done")
+                            .fontWeight(.semibold)
+                    }
+                    .buttonStyle(BorderlessButtonStyle())
                 }
-                .fontWeight(.semibold)
                 .frame(maxWidth: .infinity)
             }
         }
